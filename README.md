@@ -8,4 +8,4 @@
   - Série Clean Code Hard Mode #Aula_02
   - Série Clean Code Hard Mode #Aula_01
 
-## Série busca orientar a utilização de boas práticas baseando-se nos estudo do Clen Code - Rober C Martin "Uncle Bob".
+## Série busca orientar a utilização de boas práticas baseando-se nos estudos do Clen Code - Robert C Martin "Uncle Bob".
