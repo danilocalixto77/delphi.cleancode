@@ -1,0 +1,23 @@
+program eNota;
+
+uses
+  Vcl.Forms,
+  eNota.View.Principal in 'eNota.View.Principal.pas' {Form1},
+  eNota.Controlle.NotaFiscal in 'eNota.Controlle.NotaFiscal.pas',
+  eNota.Controlle.NotaFiscal.Interfaces in 'eNota.Controlle.NotaFiscal.Interfaces.pas',
+  eNota.Controlle.NotaFiscal.Criar in 'eNota.Controlle.NotaFiscal.Criar.pas',
+  eNota.Controlle.NotaFiscal.Validar in 'eNota.Controlle.NotaFiscal.Validar.pas',
+  eNota.Controlle.NotaFiscal.Enviar in 'eNota.Controlle.NotaFiscal.Enviar.pas',
+  eNota.Controlle.NotaFiscal.Gravar in 'eNota.Controlle.NotaFiscal.Gravar.pas',
+  eNota.Controlle.NotaFiscal.Email in 'eNota.Controlle.NotaFiscal.Email.pas',
+  eNota.Controlle.Invoker in 'eNota.Controlle.Invoker.pas',
+  eNota.Controlle.NotaFiscal.ImportarPedido in 'eNota.Controlle.NotaFiscal.ImportarPedido.pas';
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.MainFormOnTaskbar := True;
+  Application.CreateForm(TForm1, Form1);
+  Application.Run;
+end.

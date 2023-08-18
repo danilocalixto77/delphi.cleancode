@@ -1,0 +1,55 @@
+unit eNota.Controlle.Invoker;
+
+interface
+
+uses
+  eNota.Controlle.NotaFiscal.Interfaces, System.Generics.Collections;
+
+type
+  TControllerInvoker = class(TInterfacedObject, iInvoker)
+  private
+    FLista : TList<iCommand>;
+
+  public
+    constructor Create;
+    destructor Destroy; override;
+    class function New : iInvoker;
+    function Add(Value : iCommand) : iInvoker;
+    function Execute : iInvoker;
+
+  end;
+
+implementation
+
+{ TControllerInvoker }
+
+
+{ TControllerInvoker }
+
+function TControllerInvoker.Add(Value: iCommand): iInvoker;
+begin
+
+end;
+
+constructor TControllerInvoker.Create;
+begin
+
+end;
+
+destructor TControllerInvoker.Destroy;
+begin
+
+  inherited;
+end;
+
+function TControllerInvoker.Execute: iInvoker;
+begin
+
+end;
+
+class function TControllerInvoker.New: iInvoker;
+begin
+  Result := Self.Create;
+end;
+
+end.

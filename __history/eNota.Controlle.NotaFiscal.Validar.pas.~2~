@@ -1,0 +1,43 @@
+unit eNota.Controlle.NotaFiscal.Validar;
+
+interface
+
+uses
+  eNota.Controlle.NotaFiscal.Interfaces;
+
+type
+  TControllerNotaFiscalValidar = class(TInterfacedObject, iCommand)
+  private
+
+  public
+    constructor Create;
+    destructor Destroy; override;
+    class function New : iCommand;
+    function Execute : iCommand;
+
+  end;
+
+implementation
+
+{ TControllerNotaFiscalValidar }
+
+
+{ TControllerNotaFiscalValidar }
+
+constructor TControllerNotaFiscalValidar.Create;
+begin
+
+end;
+
+destructor TControllerNotaFiscalValidar.Destroy;
+begin
+
+  inherited;
+end;
+
+class function TControllerNotaFiscalValidar.New: iCommand;
+begin
+  Result := Self.Create;
+end;
+
+end.

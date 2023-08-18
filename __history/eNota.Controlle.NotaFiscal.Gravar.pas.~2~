@@ -1,0 +1,39 @@
+unit eNota.Controlle.NotaFiscal.Gravar;
+
+interface
+
+type
+  TControllerNotaFiscalGravar = class(TInterfacedObject, iCommander)
+  private
+
+  public
+    constructor Create;
+    destructor Destroy; override;
+    class function New : iCommander;
+
+  end;
+
+implementation
+
+{ TControllerNotaFiscalGravar }
+
+
+{ TControllerNotaFiscalGravar }
+
+constructor TControllerNotaFiscalGravar.Create;
+begin
+
+end;
+
+destructor TControllerNotaFiscalGravar.Destroy;
+begin
+
+  inherited;
+end;
+
+class function TControllerNotaFiscalGravar.New: iCommander;
+begin
+  Result := Self.Create;
+end;
+
+end.
